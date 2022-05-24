@@ -1,0 +1,8 @@
+:root {
+	--background: #000000;
+	--foreground: #F9F3DF;
+	
+	/* #F9F3DF */
+	--font-size: 25px;
+	--font-family: 'Oswald', sans-serif;
+}

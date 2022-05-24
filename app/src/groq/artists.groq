@@ -1,0 +1,8 @@
+*[_type == 'artists'] {
+    artistname,
+    name,
+    "imageURL":
+        image.asset->url,
+    latestAlbum,
+    linkToSpotify
+}

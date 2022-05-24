@@ -1,0 +1,5 @@
+*[_type == 'tickets'] {
+    name,
+    description,
+    price
+}
