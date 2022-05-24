@@ -17,7 +17,11 @@ export default {
         {
             title: 'Datetime',
             name: 'datetime',
-            type: 'datetime'
+            type: 'datetime',
+            options: {
+                dateFormat: 'DD-MM-YYYY',
+                timeFormat: 'HH:mm'
+            }
         }
     ]
 }

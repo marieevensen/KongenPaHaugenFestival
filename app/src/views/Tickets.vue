@@ -35,16 +35,16 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 60px;
-        background-color: #F9F3DF;
-        color: black;
+        padding-top: 60px;
+        background-color: var(--beige);
+        color: var(--black);
     }
 
     .tickets__ticket {
         width: 700px;
         text-align: left;
         background-color: #F0F4F4;
-        border: 2px solid #000000;
+        border: 2px solid var(--black);
         margin-bottom: 40px;
         padding: 20px;
         display: flex;

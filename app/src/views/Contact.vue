@@ -13,9 +13,9 @@
 
 <style>
     .contact {
-        margin: 60px 0 0 330px;
-        background-color: #F9F3DF;
-        color: black;
+        padding: 60px 0 0 330px;
+        background-color: var(--beige);
+        color: var(--black);
     }
 
     .contact__title {
@@ -24,10 +24,9 @@
 
     .contact__info {
         width: 450px;
-        margin-left: 60px;
+        margin-left: 80px;
         padding: 25px;
-        border: 2px solid black;
-        box-shadow: 20px 20px black; 
+        border: 2px solid var(--black);
         font-size: 0.8em;
     }
 

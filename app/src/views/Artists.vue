@@ -44,8 +44,8 @@
 
 <style>
     .artist {
-        background-color: black;
-        color: white;
+        background-color: var(--black);
+        color: var(--beige);
         display: grid;
 		grid-template-columns: repeat(3, 1fr);
     }
@@ -70,12 +70,12 @@
     }
 
     .card--bottom-line {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--beige);
         padding-top: 10px;
     }
 
     .card__link {
         text-decoration: none;
-        color: white;
+        color: var(--beige);
     }
 </style>

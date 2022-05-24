@@ -60,7 +60,7 @@
 		mounted() {
 			window.setInterval(() => {
 				this.nextImage()
-			}, 3000)
+			}, 5000)
 		},
 
 		computed: {

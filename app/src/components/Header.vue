@@ -1,6 +1,14 @@
 <template>
     <header class="header">
-        <RouterLink class="header__link" :to="{ name: 'home' }">home</RouterLink>
+        <div>
+            <RouterLink class="header__link" :to="{ name: 'home' }">
+            home
+            </RouterLink>
+            <!-- <div>
+                1. - 3. july
+                St. hanshaugen
+            </div> -->
+        </div>
         <RouterLink class="header__link" :to="{ name: 'about' }">ABOUT</RouterLink>
         <RouterLink class="header__link" :to="{ name: 'program' }">PROGRAM</RouterLink>
         <RouterLink class="header__link" :to="{ name: 'artists' }">ARTISTS</RouterLink>
@@ -11,20 +19,21 @@
 
 <style>
     .header {
-        background-color: #00BEA7;
+        display: flex;
+        background-color: var(--detailsBlue);
         height: 10vh;
         text-align: right;
         padding-top: 15px;
     }
 
     .header__link {
-        color: black;
+        color: var(--black);
         margin: 0px 25px 0px 0px;
         text-decoration: none;
         font-size: 0.9em;
     }
 
     .header__link:hover {
-        color: white;
+        color: var(--beige);
     }
 </style>

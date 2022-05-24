@@ -6,11 +6,11 @@
 
         <div class="program__setup">
             <div class="setup__days">
-                <span class="days__day">Friday 01.july</span>
-
-                <span class="days__day">Saturday 02.july</span>
+                <button class="days__day" @click="selectedDate = '2022-07-01'">Friday 01.july</button>
                 
-                <span class="days__day">Sunday 03.july</span>
+                <button class="days__day" @click="selectedDate = '2022-07-02'">Saturday 02.july</button>
+
+                <button class="days__day" @click="selectedDate = '2022-07-03'">Sunday 03.july</button>
             </div>
 
             <table class="setup__table">
@@ -42,14 +42,31 @@
 		
 		async created() {
     		await this.sanityFetch(query)
-		}
+		},
+
+        // data() {
+        //     return {
+        //      selectedDate
+        //     }
+        // },
+
+        // computed() {
+        //     datoer.filter(dato => dato.startsWith(this.selectedDate))
+        // },
+
+        methods: {
+            formatDate(datetimeString) {
+                const dato = new Date()
+                dato.getFullYear()
+            }
+        }
 	}
 </script>
 
 <style>
     .program {
-        background-color: black;
-        color: white;
+        background-color: var(--black);
+        color: var(--beige);
     }
     
     .program__title {
@@ -65,19 +82,20 @@
     .days__day {
         margin-left: 60px;
         padding: 7px 15px;
-        border: 2px solid white;
+        border: 2px solid var(--beige);
         border-radius: 50px;
+        color: var(--beige);
     }
 
     .days__day:hover {
-        background-color: white;
-        color: black;
+        background-color: var(--beige);
+        color: var(--black);
     }
 
     .setup__table {
         width: 1000px;
         margin: 50px 0 0 70px;
-        color: white;
+        color: var(--beige);
         text-align: left;
     }
 
@@ -90,7 +108,7 @@
     }
 
     table tr {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--beige);
     }
 
     table td {

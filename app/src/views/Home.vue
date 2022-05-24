@@ -39,7 +39,7 @@
 			<div class="passes">
 				<div class="passes__pass">
 					
-					<span class="pass__price">1099,-</span>
+					<span class="pass__price">1799,-</span>
 
 					<span class="pass__text">
 						Festivalpass <br>
@@ -50,7 +50,7 @@
 				</div>
 
 				<div class="passes__pass">
-					<span class="pass__price">1099,-</span>
+					<span class="pass__price">2399,-</span>
 
 					<span class="pass__text">
 						Premiumpass <br>
@@ -61,7 +61,7 @@
 				</div>
 
 				<div class="passes__pass">
-					<span class="pass__price">1099,-</span>
+					<span class="pass__price">3099,-</span>
 
 					<span class="pass__text">
 						Camp-pass <br>
@@ -138,7 +138,7 @@
 
 	.lineup__artist:hover .artist__image {
 		opacity: 1;
-		color: #00BEA7;
+		color: var(--detailsBlue);
 		text-decoration-line: line-through;
 	}
 
@@ -147,12 +147,12 @@
 		font-size: 3em;
 		text-transform: uppercase;
 		font-weight: bold;
-		margin: 0 20px;
+		padding: 0 20px;
 		cursor: pointer;
 	}
 
 	.artist__name:hover {
-		color: #00BEA7;
+		color: var(--detailsBlue);
 		text-decoration-line: line-through;
 	}
 
@@ -161,14 +161,16 @@
 		opacity: 0;
 		position: absolute;
 		z-index: 1;
-		top: 0;
-		right: 0;
+		position: fixed;
+		pointer-events: none;
+		top: 35%;
+		left: 40%;
 	}
 
 	.lineup__link {
-		border: 2px solid var(--foreground);
+		border: 2px solid var(--beige);
 		padding: 10px;
-		color: var(--foreground);
+		color: var(--beige);
 		text-decoration: none;
 		text-transform: uppercase;
 	}
@@ -212,8 +214,8 @@
 		text-align: left;
 		display: flex;
 		flex-direction: column;
-		border-right: 2px solid white;
-		border-left: 2px solid white;
+		border-right: 2px solid var(--beige);
+		border-left: 2px solid var(--beige);
 		padding: 40px;
 		margin: 30px;
 	}
@@ -231,12 +233,12 @@
 	.image__doja-cat {
 		width: 400px;
 		margin: 0 60px 0 160px;
-		box-shadow: 20px 20px var(--foreground); 
+		box-shadow: 20px 20px var(--beige); 
 	}
 
 	.image__billie {
 		width: 400px;
 		margin: 30px 50px 0;
-		box-shadow: 20px 20px var(--foreground); 
+		box-shadow: 20px 20px var(--beige); 
 	}
 </style>

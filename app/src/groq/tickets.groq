@@ -1,4 +1,4 @@
-*[_type == 'tickets'] {
+*[_type == 'tickets'] | order(price asc, name asc) {
     name,
     description,
     price
