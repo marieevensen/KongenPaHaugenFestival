@@ -1,5 +1,0 @@
-*[_type == 'artists'] {
-    artistname,
-    "imageURL":
-        image.asset->url
-}

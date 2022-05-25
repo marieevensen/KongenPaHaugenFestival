@@ -32,7 +32,6 @@
 			</svg>
 		</section>
 
-		<!-- <Passes /> -->
 		<section class="frontpage__passes">
 			<span class="passes__title">FESTIVALPASSES</span>
 
@@ -91,15 +90,13 @@
 
 <script>
 	import Slideshow from '../components/Slideshow.vue';
-	import Passes from '../components/Passes.vue';
 
     import sanityMixin from '../mixins/sanityMixin.js';
-	import query from '../groq/home.groq?raw';
+	import query from '../groq/artists.groq?raw';
 
 	export default {
 		components: {
-			Slideshow,
-			Passes
+			Slideshow
 		},
 
 		mixins: [sanityMixin],
@@ -199,6 +196,10 @@
 		text-align: center;
 		margin: 320px 0 0 700px;
 		font-size: 1.5em;
+	}
+
+	.frontpage__passes {
+		margin-top: 150px;
 	}
 
 	.passes {
