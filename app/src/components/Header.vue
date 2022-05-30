@@ -6,7 +6,7 @@
             </RouterLink>
 
             <div>
-                <p class="logo__date">1. - 3. july</p>
+                <p class="logo__date">1. to 3. july</p>
                 <p class="logo__date">St. hanshaugen</p>
             </div>
         </div>
@@ -95,7 +95,7 @@
 
     @media screen and (max-width: 800px) {
         .navigation__link {
-            margin: 0 9px;
+            margin: 0 8px;
         }
     }
 
