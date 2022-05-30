@@ -5,7 +5,10 @@
                 <img class="logo__image" src="/images/logo.png" alt="Logo, click here to go to the homepage">
             </RouterLink>
 
-            <span class="logo__date">1. - 3. july St. hanshaugen</span>
+            <div>
+                <p class="logo__date">1. - 3. july</p>
+                <p class="logo__date">St. hanshaugen</p>
+            </div>
         </div>
 
         <nav class="header__navigation">
@@ -64,10 +67,6 @@
         .logo__image {
             width: 90px;
         }
-    }
-
-    .logo__date {
-        margin-top: 30px;
     }
 
     @media screen and (max-width: 800px) {

@@ -50,14 +50,34 @@
 		grid-template-columns: repeat(3, 1fr);
     }
 
+    @media screen and (max-width: 800px) {
+        .artist {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+    }
+
     .artist__card {
-        width: 400px;
+        width: 31vw;
         padding: 0 30px;
         margin: 0 8px;
     }
 
+    @media screen and (max-width: 800px) {
+        .artist__card {
+            width: 300px;
+            padding: 0;
+        }
+    }
+
     .image {
-        width: 340px;
+        width: 26vw;
+    }
+
+    @media screen and (max-width: 800px) {
+        .image {
+            width: 300px;
+        }
     }
 
     .card__image {

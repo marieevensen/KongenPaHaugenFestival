@@ -38,8 +38,8 @@
 
 	@media screen and (max-width: 800px) {
 		.announcement-bar {
-			height: 2vh;
-			font-size: 0.6em;
+			height: 4vh;
+			font-size: 0.8em;
 		}
 	}
 	
