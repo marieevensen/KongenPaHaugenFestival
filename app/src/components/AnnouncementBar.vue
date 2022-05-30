@@ -35,6 +35,13 @@
 		white-space: nowrap;
 		text-decoration: none;
 	}
+
+	@media screen and (max-width: 800px) {
+		.announcement-bar {
+			height: 2vh;
+			font-size: 0.6em;
+		}
+	}
 	
 	.announcement-bar:hover {
 		background-color: var(--backgroundLight);
