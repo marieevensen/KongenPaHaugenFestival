@@ -6,7 +6,7 @@
             <p><span class="info__type">Mail</span> post@festival-name.no</p>
             <p><span class="info__type">Number</span> 922 66 299</p>
 
-            <h4 class="info__text">Also check out the links down below for our socials!</h4>
+            <p class="info__text">Also check out the links down below for our socials!</p>
         </div>
     </main>
 </template>
@@ -37,5 +37,6 @@
     .info__text {
         margin-top: 50px;
         font-weight: lighter;
+        font-size: 1.1em;
     }
 </style>

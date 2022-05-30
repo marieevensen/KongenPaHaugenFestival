@@ -8,7 +8,7 @@
 		</button>
 
 		<figure>
-			<figcaption class="slideshow__name">{{ currentSlide.name }}</figcaption>
+			<figcaption class="slideshow__caption">{{ currentSlide.name }}</figcaption>
 			
 			<img class="slideshow__image" :src="currentSlide.file" :alt="currentSlide.alt"/>
 		</figure>
@@ -31,27 +31,27 @@
                     {
 						name: 'Billie Eilish',
 						file: "/images/billieSlide.jpg",
-						alt: "picture of the artist Billie Eilish"
+						alt: "Picture of the artist Billie Eilish"
 					},
 					{
 						name: 'Ariana Grande',
 						file: "/images/arianaSlide.jpg",
-						alt: "picture of the artist Ariana Grande"
+						alt: "Picture of the artist Ariana Grande"
 					},
 					{
 						name: 'Melanie Martinez',
 						file: "/images/melanieSlide.jpg",
-						alt: "picture of the artistduo Karpe"
+						alt: "Picture of the artistduo Karpe"
 					},
 					{
 						name: 'Doja Cat',
 						file: "/images/dojaSlide.jpeg",
-						alt: "picture of the artistduo Karpe"
+						alt: "Picture of the artistduo Karpe"
 					},
 					{
 						name: 'SZA',
 						file: "/images/szaSlide.jpg",
-						alt: "picture of the artistduo Karpe"
+						alt: "Picture of the artistduo Karpe"
 					},
 				]
 			}
@@ -97,7 +97,7 @@
         margin-left: 20px;
     }
 
-	.slideshow__name {
+	.slideshow__caption {
 		position: absolute;
 		margin: 430px 0 0 20px;
 		font-size: 40px;

@@ -2,7 +2,7 @@
     <header class="header">
         <div class="header__logo">
             <RouterLink class="" :to="{ name: 'home' }">
-                <img class="logo__image" src="/images/logo.png" alt="">
+                <img class="logo__image" src="/images/logo.png" alt="Logo, click here to go to the homepage">
             </RouterLink>
 
                 1. - 3. july <br>

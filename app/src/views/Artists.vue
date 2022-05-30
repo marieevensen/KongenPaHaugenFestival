@@ -4,7 +4,7 @@
 	<main class="artist" v-else>
 		<article class="artist__card" v-for="artist in result">
             <figure class="card__image">
-                <img class="image" :src="artist.imageURL" alt="">
+                <img class="image" :src="artist.imageURL" alt="Picture of the artist">
             </figure>
 			
             <p class="card__artist-name card--bottom-line">{{ artist.artistname }}</p>

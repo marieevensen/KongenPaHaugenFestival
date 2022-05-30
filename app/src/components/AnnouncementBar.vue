@@ -41,11 +41,10 @@
 	}
 
 	.announcement-bar__message {
+		padding-left: 100%;
 		font-family: 'JetBrainsMono', 'Arial Narrow', Arial, sans-serif;
 		font-weight: bold;
-		font-size: var(--font-size);
 		animation: scroll 20s linear infinite;
-		padding-left: 100%;
         color: var(--foregroundLight);
 	}
 

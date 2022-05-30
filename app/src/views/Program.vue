@@ -1,15 +1,14 @@
 <template>
     <div v-if="loading">...</div>
 
-    <div class="program" v-else>
-        <span class="program__title">Marie Festival 2022</span>
+    <main class="program" v-else>
+        <h1 class="program__title">KONGEN PÅ HAUGEN 2022</h1>
 
-        <div class="program__setup">
             <table class="setup__table">
                 <thead>
                     <tr>
                         <td>Artist</td>
-                        <td>Tid</td>
+                        <td>Date and time</td>
                     </tr>
                 </thead>
 
@@ -20,8 +19,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
+    </main>
 </template>
 
 <script>
@@ -57,36 +55,19 @@
 
 <style>
     .program {
+        padding-top: 60px;
         background-color: var(--backgroundDark);
         color: var(--foregroundLight);
     }
     
     .program__title {
-        margin: 100px 0px 0px 50px; /*hva skjer her top?*/
+        margin-left: 150px;
         font-size: 50px;
     }
 
-    .program__setup {
-        margin-top: 30px;
-        font-size: 0.8em;
-    }
-
-    .days__day {
-        margin-left: 60px;
-        padding: 7px 15px;
-        border: 2px solid var(--foregroundLight);
-        border-radius: 50px;
-        color: var(--foregroundLight);
-    }
-
-    .days__day:hover {
-        background-color: var(--BACKgroundLight);
-        color: var(--foregroundDark);
-    }
-
     .setup__table {
-        width: 1000px;
-        margin: 50px 0 0 70px;
+        width: 800px;
+        margin: 20px 0 0 200px;
         color: var(--foregroundLight);
         text-align: left;
     }
