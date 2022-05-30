@@ -38,6 +38,12 @@
         padding-bottom: 20px;
     }
 
+    @media screen and (max-width: 800px) {
+        .footer {
+            font-size: 0.9em;
+        }
+    }
+
     .footer--inverted {
         background: var(--backgroundLight);
         color: var(--foregroundDark)

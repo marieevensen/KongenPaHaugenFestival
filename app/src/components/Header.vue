@@ -81,7 +81,7 @@
 
     @media screen and (max-width: 800px) {
         .header__navigation {
-            margin-top: 3px;
+            margin-top: 5px;
             font-size: 0.7em;
             font-weight: bold;
         }

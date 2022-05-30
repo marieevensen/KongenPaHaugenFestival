@@ -115,7 +115,7 @@
 
     @media screen and (max-width: 800px) {
         table td {
-            padding: 5px;
+            padding: 10px 5px;
         }
     }
 </style>

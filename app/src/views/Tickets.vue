@@ -5,7 +5,7 @@
         <section class="tickets__ticket" v-for="ticket in result">
             <div class="ticket__text">
                 <p class="text__name">{{ ticket.name }}</p>
-
+                
                 <p class="text__description">{{ ticket.description }}</p>
             </div>
 

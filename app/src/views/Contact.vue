@@ -31,7 +31,7 @@
 
     @media screen and (max-width: 800px) {
         .contact__title {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             font-size: 1.2em;
         }
     }

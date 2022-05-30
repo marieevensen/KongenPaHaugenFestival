@@ -1,9 +1,9 @@
 <template>
     <main class="about">
-        <h1 class="about__title">ABOUT THE FESTIVAL</h1>
-        
-        <div class="about__description">
-            <p class="description__text">
+        <div class="about__text">
+            <h1 class="text__title">ABOUT THE FESTIVAL</h1>
+
+            <p class="text__info">
                 Lorem ipsum dolor sit amet, consectetur 
                 adipiscing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad
@@ -13,33 +13,71 @@
                 voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur.
             </p>
-                
-            <img class="description__image" src="/images/about.jpg" alt="Picture of the festival">
         </div>
+
+        <figure class="about__image" >
+            <img src="/images/about.jpg" alt="Picture of the festival">
+        </figure>
     </main>
 </template>
 
 <style>
     .about {
-        margin: 60px 0 0 200px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 60px;
     }
 
-    .about__title {
-        margin-left: 100px;
-        font-weight: bold;
+    @media screen and (max-width: 800px) {
+        .about {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+        }
     }
 
-    .about__description {
-       display: flex;
-       margin-top: 20px;
-    }
-
-    .description__text {
-        width: 500px;
+    .about__text {
         margin-right: 40px;
     }
 
-    .description__image {
+    @media screen and (max-width: 800px) {
+        .about__text {
+            margin: 0;
+        }
+    }
+
+    .text__title {
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 800px) {
+        .text__title {
+            font-size: 1.2em;
+        }
+    }
+
+    .text__info {
+        width: 40vw;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .text__info {
+            width: 60vw;
+            font-size: 0.8em;
+        }
+    }
+
+    .about__image {
         width: 300px;
+        margin-top: 60px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .about__image {
+            width: 200px;
+        }
     }
 </style>

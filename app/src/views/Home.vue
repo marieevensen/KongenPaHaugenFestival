@@ -19,7 +19,7 @@
 		<div class="frontpage__intro">
 			<img class="intro__image" src="/images/karpeHome.jpg" alt="Picture of the artist Chirag">
 
-			<section class="intro__message">
+			<div class="intro__message">
 				<h1 class="message__title">We are back!</h1>
 
 				<p class="message__text">
@@ -27,10 +27,10 @@
 					share music experiences, party, community and good
 					atmosphere at St. Hanshaugen in July.
 				</p>
-			</section>
+			</div>
 		</div>
 
-		<div class="frontpage__passes">
+		<section class="frontpage__passes">
 			<h1 class="passes__title">FESTIVALPASSES</h1>
 
 			<div class="passes">
@@ -70,7 +70,7 @@
 					</ul>		
 				</section>
 			</div>
-		</div>
+		</section>
 
 		<div class="frontpage__images">
 			<figure>

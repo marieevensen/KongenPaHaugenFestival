@@ -42,8 +42,10 @@
 		}
 	}
 	
-	.announcement-bar:hover {
-		background-color: var(--backgroundLight);
+	@media screen and (min-width: 800px) {
+		.announcement-bar:hover {
+			background-color: var(--backgroundLight);
+		}
 	}
 
 	.announcement-bar__message {
