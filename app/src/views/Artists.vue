@@ -1,19 +1,19 @@
 <template>
     <div v-if="loading">...</div>
 
-	<div class="artist" v-else>
-		<div class="artist__card" v-for="artist in result">
-            <div class="card__image">
+	<main class="artist" v-else>
+		<article class="artist__card" v-for="artist in result">
+            <figure class="card__image">
                 <img class="image" :src="artist.imageURL" alt="">
-            </div>
+            </figure>
 			
-            <div class="card__artist-name card--bottom-line">{{ artist.artistname }}</div>
+            <p class="card__artist-name card--bottom-line">{{ artist.artistname }}</p>
             
-            <div class="card--bottom-line">{{ artist.name[0] }}</div>
+            <p class="card--bottom-line">{{ artist.name[0] }}</p>
             
-            <div class="card--bottom-line">{{ artist.name[1] }} {{ artist.latestAlbum[1] }}</div>
+            <p class="card--bottom-line">{{ artist.name[1] }} {{ artist.latestAlbum[1] }}</p>
             
-            <div class="card--bottom-line">{{ artist.latestAlbum[0] }}</div>
+            <p class="card--bottom-line">{{ artist.latestAlbum[0] }}</p>
             
             <div class="card--bottom-line">
                 <a class="card__link" :href="artist.linkToSpotify">
@@ -24,8 +24,8 @@
                     Link to Spotify
                 </a>
             </div>
-		</div>
-	</div>
+		</article>
+	</main>
 </template>
 
 <script>
@@ -44,8 +44,8 @@
 
 <style>
     .artist {
-        background-color: var(--black);
-        color: var(--beige);
+        background-color: var(--backgroundDark);
+        color: var(--foregroundLight);
         display: grid;
 		grid-template-columns: repeat(3, 1fr);
     }
@@ -70,12 +70,12 @@
     }
 
     .card--bottom-line {
-        border-bottom: 1px solid var(--beige);
+        border-bottom: 1px solid var(--foregroundLight);
         padding-top: 10px;
     }
 
     .card__link {
         text-decoration: none;
-        color: var(--beige);
+        color: var(--foregroundLight);
     }
 </style>

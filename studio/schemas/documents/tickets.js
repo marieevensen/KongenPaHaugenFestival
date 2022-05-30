@@ -11,16 +11,13 @@ export default {
         {
             title: 'Description',
             name: 'description',
-            type: 'array',
-            of: [
-                { type: 'text' }
-            ]
+            type: 'text'
         },
         {
             title: 'Price',
             name: 'price',
             type: 'number',
-            validation: Rule => Rule.required().min(799).max(4000)
+            validation: Rule => Rule.required().min(500).max(4000)
         }
     ]
 }

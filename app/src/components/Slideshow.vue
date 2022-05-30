@@ -8,7 +8,7 @@
 		</button>
 
 		<figure>
-			<span class="slideshow__name">{{ currentSlide.name }}</span>
+			<figcaption class="slideshow__name">{{ currentSlide.name }}</figcaption>
 			
 			<img class="slideshow__image" :src="currentSlide.file" :alt="currentSlide.alt"/>
 		</figure>
@@ -101,7 +101,7 @@
 		position: absolute;
 		margin: 430px 0 0 20px;
 		font-size: 40px;
-		color: black;
+		color: var(--foregroundDark);
 	}
 
 	.slideshow__image {

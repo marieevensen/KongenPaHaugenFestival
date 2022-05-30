@@ -3,7 +3,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 import artists from './documents/artists.js';
 import concerts from './documents/concerts.js';
-import programs from './documents/programs.js';
 import tickets from './documents/tickets.js';
 
 
@@ -12,7 +11,6 @@ export default createSchema({
 	types: schemaTypes.concat([
 		artists,
 		concerts,
-		programs,
 		tickets
 	]),
 })

@@ -1,19 +1,17 @@
 <template>
     <div v-if="loading">...</div>
 
-    <div class="tickets" v-else>
-        <div class="tickets__ticket" v-for="ticket in result">
+    <main class="tickets" v-else>
+        <section class="tickets__ticket" v-for="ticket in result">
             <div class="ticket__text">
-                <span class="text__name">{{ ticket.name }}</span><br>
+                <p class="text__name">{{ ticket.name }}</p>
 
-                <span class="text__description">{{ ticket.description[0] }}</span>
+                <p class="text__description">{{ ticket.description }}</p>
             </div>
 
-            <div class="ticket__price">
-                {{ ticket.price }}kr
-            </div>
-        </div>
-    </div>
+            <p class="ticket__price">{{ ticket.price }}kr</p>
+        </section>
+    </main>
 </template>
 
 <script>
@@ -36,15 +34,15 @@
         align-items: center;
         flex-direction: column;
         padding-top: 60px;
-        background-color: var(--beige);
-        color: var(--black);
+        background-color: var(--backgroundLight);
+        color: var(--foregroundDark);
     }
 
     .tickets__ticket {
         width: 700px;
         text-align: left;
-        background-color: #F0F4F4;
-        border: 2px solid var(--black);
+        background-color: var(--detailsTickets);
+        border: 2px solid var(--foregroundDark);
         margin-bottom: 40px;
         padding: 20px;
         display: flex;

@@ -1,8 +1,6 @@
 <template>
-	<RouterLink class="header__link" :to="{ name: 'tickets' }">
-		<section class='announcement-bar' @mouseenter='announcementBarAnimationToggle' @mouseleave='announcementBarAnimationToggle'>
-			<h4 class='announcement-bar__message' :class='{pause: !this.announcementBar.playing}'>{{ announcementBar.message }}</h4>
-		</section>
+	<RouterLink class="announcement-bar" :to="{ name: 'tickets' }" @mouseenter='announcementBarAnimationToggle' @mouseleave='announcementBarAnimationToggle'> 
+		<h4 class='announcement-bar__message' :class='{pause: !this.announcementBar.playing}'>{{ announcementBar.message }}</h4>
 	</RouterLink>
 </template>
 
@@ -32,13 +30,14 @@
 		height: 5vh;
 		display: flex;
 		align-items: center;
-		background: var(--black);
+		background: var(--backgroundDark);
 		overflow: hidden;
 		white-space: nowrap;
+		text-decoration: none;
 	}
 	
 	.announcement-bar:hover {
-		background-color: var(--beige);
+		background-color: var(--backgroundLight);
 	}
 
 	.announcement-bar__message {
@@ -47,20 +46,18 @@
 		font-size: var(--font-size);
 		animation: scroll 20s linear infinite;
 		padding-left: 100%;
-        color: var(--beige);
+        color: var(--foregroundLight);
 	}
 
 	.pause {
 		animation-play-state: paused;
-		color: var(--black);
+		color: var(--foregroundDark);
 	}
-
 
 	@keyframes scroll {
 		0% {
 			transform: translate(0, 0);
 		}
-
 		100% {
 			transform: translate(-100%, 0);
 		}

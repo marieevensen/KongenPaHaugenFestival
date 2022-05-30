@@ -1,7 +1,12 @@
 :root {
-	--black: #000000;
-	--beige: #F9F3DF;
-	--detailsBlue: #00BEA7;
+	--backgroundDark: #000000;
+	--foregroundLight: #F9F3DF;
+
+	--backgroundLight: #F9F3DF;
+	--foregroundDark: #000000;
+
+	--details: #00BEA7;
+	--detailsTickets: #F0F4F4;
 	
 	/* #F9F3DF */
 	--font-size: 25px;

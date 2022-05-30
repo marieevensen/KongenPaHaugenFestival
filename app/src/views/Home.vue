@@ -135,7 +135,7 @@
 
 	.lineup__artist:hover .artist__image {
 		opacity: 1;
-		color: var(--detailsBlue);
+		color: var(--details);
 		text-decoration-line: line-through;
 	}
 
@@ -149,7 +149,7 @@
 	}
 
 	.artist__name:hover {
-		color: var(--detailsBlue);
+		color: var(--details);
 		text-decoration-line: line-through;
 	}
 
@@ -165,11 +165,20 @@
 	}
 
 	.lineup__link {
-		border: 2px solid var(--beige);
 		padding: 10px;
-		color: var(--beige);
 		text-decoration: none;
 		text-transform: uppercase;
+		border: 2px solid var(--foregroundLight);
+		color: var(--foregroundLight);
+	}
+
+	.lineup__link:hover {
+		padding: 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: var(--backgroundLight);
+		border: 2px solid var(--foregroundLight);
+		color: var(--foregroundDark);
 	}
 
 	.frontpage__intro {
@@ -215,8 +224,8 @@
 		text-align: left;
 		display: flex;
 		flex-direction: column;
-		border-right: 2px solid var(--beige);
-		border-left: 2px solid var(--beige);
+		border-right: 2px solid var(--foregroundLight);
+		border-left: 2px solid var(--foregroundLight);
 		padding: 40px;
 		margin: 30px;
 	}
@@ -234,12 +243,12 @@
 	.image__doja-cat {
 		width: 400px;
 		margin: 0 60px 0 160px;
-		box-shadow: 20px 20px var(--beige); 
+		box-shadow: 20px 20px var(--foregroundLight); 
 	}
 
 	.image__billie {
 		width: 400px;
 		margin: 30px 50px 0;
-		box-shadow: 20px 20px var(--beige); 
+		box-shadow: 20px 20px var(--foregroundLight); 
 	}
 </style>

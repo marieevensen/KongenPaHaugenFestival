@@ -12,7 +12,9 @@ export default {
             title: 'Artists',
             name: 'artists',
             type: 'reference',
-            to: [{ type: 'artists' }] 
+            to: [
+                { type: 'artists' }
+            ] 
         },
         {
             title: 'Datetime',

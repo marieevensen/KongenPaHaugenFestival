@@ -1,21 +1,21 @@
 <template>
-    <div class="contact">
-        <h2 class="contact__title">CONTACT US</h2>
+    <main class="contact">
+        <h1 class="contact__title">CONTACT US</h1>
 
         <div class="contact__info">
-            <span class="info__type">Mail</span> post@festival-name.no <br>
-            <span class="info__type">Number</span> 922 66 299 <br>
+            <p><span class="info__type">Mail</span> post@festival-name.no</p>
+            <p><span class="info__type">Number</span> 922 66 299</p>
 
             <h4 class="info__text">Also check out the links down below for our socials!</h4>
         </div>
-    </div>
+    </main>
 </template>
 
 <style>
     .contact {
         padding: 60px 0 0 330px;
-        background-color: var(--beige);
-        color: var(--black);
+        background-color: var(--backgroundLight);
+        color: var(--foregroundDark);
     }
 
     .contact__title {
@@ -26,7 +26,7 @@
         width: 450px;
         margin-left: 80px;
         padding: 25px;
-        border: 2px solid var(--black);
+        border: 2px solid var(--foregroundDark);
         font-size: 0.8em;
     }
 

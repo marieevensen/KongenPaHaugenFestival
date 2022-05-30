@@ -5,14 +5,6 @@
         <span class="program__title">Marie Festival 2022</span>
 
         <div class="program__setup">
-            <div class="setup__days">
-                <button class="days__day" @click="selectedDate = '2022-07-01'">Friday 01.july</button>
-                
-                <button class="days__day" @click="selectedDate = '2022-07-02'">Saturday 02.july</button>
-
-                <button class="days__day" @click="selectedDate = '2022-07-03'">Sunday 03.july</button>
-            </div>
-
             <table class="setup__table">
                 <thead>
                     <tr>
@@ -65,8 +57,8 @@
 
 <style>
     .program {
-        background-color: var(--black);
-        color: var(--beige);
+        background-color: var(--backgroundDark);
+        color: var(--foregroundLight);
     }
     
     .program__title {
@@ -82,20 +74,20 @@
     .days__day {
         margin-left: 60px;
         padding: 7px 15px;
-        border: 2px solid var(--beige);
+        border: 2px solid var(--foregroundLight);
         border-radius: 50px;
-        color: var(--beige);
+        color: var(--foregroundLight);
     }
 
     .days__day:hover {
-        background-color: var(--beige);
-        color: var(--black);
+        background-color: var(--BACKgroundLight);
+        color: var(--foregroundDark);
     }
 
     .setup__table {
         width: 1000px;
         margin: 50px 0 0 70px;
-        color: var(--beige);
+        color: var(--foregroundLight);
         text-align: left;
     }
 
@@ -108,7 +100,7 @@
     }
 
     table tr {
-        border-bottom: 1px solid var(--beige);
+        border-bottom: 1px solid var(--foregroundLight);
     }
 
     table td {
