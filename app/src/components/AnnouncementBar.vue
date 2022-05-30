@@ -1,5 +1,5 @@
 <template>
-	<RouterLink class="announcement-bar" :to="{ name: 'tickets' }" @mouseenter='announcementBarAnimationToggle' @mouseleave='announcementBarAnimationToggle'> 
+	<RouterLink class="announcement-bar" aria-label="Tickets on sale from 6.june to 12.june, buy now, pay later" :to="{ name: 'tickets' }" @mouseenter='announcementBarAnimationToggle' @mouseleave='announcementBarAnimationToggle'> 
 		<h4 class='announcement-bar__message' :class='{pause: !this.announcementBar.playing}'>{{ announcementBar.message }}</h4>
 	</RouterLink>
 </template>

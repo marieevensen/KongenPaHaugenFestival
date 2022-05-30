@@ -5,8 +5,7 @@
                 <img class="logo__image" src="/images/logo.png" alt="Logo, click here to go to the homepage">
             </RouterLink>
 
-                1. - 3. july <br>
-                St. hanshaugen
+            <span class="logo__date">1. - 3. july St. hanshaugen</span>
         </div>
 
         <nav class="header__navigation">
@@ -29,6 +28,16 @@
         background-color: var(--details);
         height: 10vh;
         text-align: right;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 800px) {
+        .header {
+            flex-direction: column;
+            height: 12vh;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     .header__logo {
@@ -37,7 +46,13 @@
         font-size: 0.8em;
         color: var(--foregroundDark);
         font-weight: bold;
-        margin-right: 515px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .header__logo {
+            display: inline;
+            text-align: center;
+        }
     }
 
     .logo__image {
@@ -45,14 +60,43 @@
         margin: 6px 15px 0 25px;
     }
 
+    @media screen and (max-width: 800px) {
+        .logo__image {
+            width: 90px;
+        }
+    }
+
+    .logo__date {
+        margin-top: 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .logo__date {
+            display: none;
+        }
+    }
+
     .header__navigation {
-        margin-top: 11px;
+        margin-top: 12px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .header__navigation {
+            margin-top: 3px;
+            font-size: 0.7em;
+        }
     }
 
     .navigation__link {
-        color: var(--foregroundDark);
-        margin: 0 20px 0 0;
+        margin: 0 15px;
         text-decoration: none;
+        color: var(--foregroundDark);
+    }
+
+    @media screen and (max-width: 800px) {
+        .navigation__link {
+            margin: 0 10px;
+        }
     }
 
     .navigation__link:hover {

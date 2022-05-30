@@ -4,3 +4,7 @@ body {
 	font-size: var(--font-size);
 	font-family: var(--font-family);
 }
+
+main {
+    width: 100%;
+}

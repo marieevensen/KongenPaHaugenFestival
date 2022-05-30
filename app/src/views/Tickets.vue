@@ -31,21 +31,28 @@
 <style>
     .tickets {
         display: flex;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
         padding-top: 60px;
         background-color: var(--backgroundLight);
         color: var(--foregroundDark);
     }
 
     .tickets__ticket {
-        width: 700px;
+        width: 55vw;
+        display: flex;
         text-align: left;
-        background-color: var(--detailsTickets);
-        border: 2px solid var(--foregroundDark);
         margin-bottom: 40px;
         padding: 20px;
-        display: flex;
+        background-color: var(--detailsTickets);
+        border: 2px solid var(--foregroundDark);
+    }
+
+    @media screen and (max-width: 800px) {
+        .tickets__ticket {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .text__name {
@@ -57,8 +64,16 @@
     }
 
     .ticket__price {
+        padding: 20px 0 0 100px;
         font-weight: bold;
-        font-size: 35px;
-        padding: 10px 0 0 160px;
+        font-size: 1.3em;
+    }
+
+    @media screen and (max-width: 800px) {
+        .ticket__price {
+            padding: 5px 0 0 0;
+            text-align: center;
+            font-size: 1em;
+        }
     }
 </style>
