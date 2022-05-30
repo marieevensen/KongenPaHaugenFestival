@@ -55,6 +55,12 @@
         color: var(--foregroundLight);
 	}
 
+	@media screen and (max-width: 800px) {
+		.announcement-bar__message {
+			font-weight: lighter;
+		}
+	}
+
 	.pause {
 		animation-play-state: paused;
 		color: var(--foregroundDark);

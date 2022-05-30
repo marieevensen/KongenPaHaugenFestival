@@ -84,6 +84,7 @@
         .header__navigation {
             margin-top: 3px;
             font-size: 0.7em;
+            font-weight: bold;
         }
     }
 
