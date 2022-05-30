@@ -23,7 +23,6 @@
 	}
 </script>
 
-
 <style>
 	.announcement-bar {
 		width: 100%;
@@ -39,7 +38,7 @@
 	@media screen and (max-width: 800px) {
 		.announcement-bar {
 			height: 4vh;
-			font-size: 0.8em;
+			font-size: 0.5em;
 		}
 	}
 	
@@ -49,7 +48,6 @@
 
 	.announcement-bar__message {
 		padding-left: 100%;
-		font-family: 'JetBrainsMono', 'Arial Narrow', Arial, sans-serif;
 		font-weight: bold;
 		animation: scroll 20s linear infinite;
         color: var(--foregroundLight);

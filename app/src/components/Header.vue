@@ -82,7 +82,7 @@
     @media screen and (max-width: 800px) {
         .header__navigation {
             margin-top: 3px;
-            font-size: 0.7em;
+            font-size: 0.65em;
             font-weight: bold;
         }
     }
@@ -95,7 +95,7 @@
 
     @media screen and (max-width: 800px) {
         .navigation__link {
-            margin: 0 10px;
+            margin: 0 9px;
         }
     }
 
