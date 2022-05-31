@@ -115,6 +115,12 @@
 		animation-duration: 3s;
 	}
 
+	@media screen and (max-width: 800px) {
+        .frontpage__lineup {
+			margin: 15px;
+		}
+    }
+
 	@keyframes transformIt {
 		from {
 			transform: translate(1100px);
@@ -142,6 +148,13 @@
 		padding: 0 20px;
 		cursor: pointer;
 	}
+
+	@media screen and (max-width: 800px) {
+        .artist__name {
+			font-size: 1.5em;
+			padding: 0 10px;
+		}
+    }
 
 	.artist__name:hover {
 		color: var(--details);
@@ -230,18 +243,19 @@
 
 	.frontpage__images {
 		display: flex;
+		justify-content: center;
 		margin-top: 150px;
 	}
 
 	.image--doja {
 		width: 400px;
-		margin: 0 60px 0 160px;
+		margin: 100px 100px 0 0;
 		box-shadow: 20px 20px var(--foregroundLight); 
 	}
 
 	.image--billie {
 		width: 400px;
-		margin: 30px 50px 0;
+		/* margin: 30px 50px 0; */
 		box-shadow: 20px 20px var(--foregroundLight); 
 	}
 </style>

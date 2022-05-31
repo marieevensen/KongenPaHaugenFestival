@@ -86,8 +86,7 @@
 	.frontpage__slideshow {
 		width: 70vw;
 		position: relative;
-		margin-top: 150px;
-		margin-left: 180px;
+		margin: 150px auto 0;
 	}
 
     .slideshow__button--left {
@@ -99,13 +98,19 @@
 
 	.slideshow__caption {
 		position: absolute;
-		margin: 430px 0 0 20px;
-		font-size: 40px;
+		bottom: 0;
+		font-size: 2em;
 		color: var(--foregroundDark);
 	}
 
+	@media screen and (max-width: 800px) {
+		.slideshow__caption {
+			font-size: 1.2em;
+		}
+	}
+
 	.slideshow__image {
-		width: 900px;
+		width: 100%;
 	}
 
     .slideshow__button--right {

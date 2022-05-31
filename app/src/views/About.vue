@@ -1,25 +1,32 @@
 <template>
-    <main class="about">
-        <div class="about__text">
-            <h1 class="text__title">ABOUT THE FESTIVAL</h1>
+    <div v-if="loading">...</div>
 
-            <p class="text__info">
-                Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-            </p>
+    <main class="about" v-else v-for="about in result">
+        <div class="about__text">
+            <h1 class="text__title">{{ about.title }}</h1>
+
+            <p class="text__info">{{ about.description }}</p>
         </div>
 
         <figure class="about__image" >
-            <img src="/images/about.jpg" alt="Picture of the festival">
+            <img :src="about.imageURL" alt="Picture of the festival">
         </figure>
     </main>
 </template>
+
+<script>
+    import sanityMixin from '../mixins/sanityMixin.js';
+	import query from '../groq/about.groq?raw';
+
+
+	export default {
+		mixins: [sanityMixin],
+		
+		async created() {
+    		await this.sanityFetch(query)
+		}
+	}
+</script>
 
 <style>
     .about {
@@ -49,6 +56,7 @@
 
     .text__title {
         font-weight: bold;
+        text-transform: uppercase;
     }
 
     @media screen and (max-width: 800px) {
@@ -77,7 +85,7 @@
 
     @media screen and (max-width: 800px) {
         .about__image {
-            width: 200px;
+            width: 250px;
         }
     }
 </style>

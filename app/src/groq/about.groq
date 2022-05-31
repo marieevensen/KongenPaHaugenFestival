@@ -1,0 +1,6 @@
+*[_type == 'about'] {
+    title,
+    description,
+    "imageURL":
+        image.asset->url,
+}

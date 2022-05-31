@@ -1,15 +1,31 @@
 <template>
-    <main class="contact">
-        <h1 class="contact__title">CONTACT US</h1>
+    <div v-if="loading">...</div>
+
+    <main class="contact" v-else v-for="contactInfo in result">
+        <h1 class="contact__title">{{ contactInfo.title }}</h1>
 
         <div class="contact__info">
-            <p><span class="info__type">Mail</span> post@festival-name.no</p>
-            <p><span class="info__type">Number</span> 922 66 299</p>
+            <p><span class="info__type">Mail</span> {{ contactInfo.mail }}</p>
+            <p><span class="info__type">Number</span> {{ contactInfo.number }}</p>
 
-            <p class="info__text">Also check out the links down below for our socials!</p>
+            <p class="info__text">{{ contactInfo.quote }}</p>
         </div>
     </main>
 </template>
+
+<script>
+    import sanityMixin from '../mixins/sanityMixin.js';
+	import query from '../groq/contactInfo.groq?raw';
+
+
+	export default {
+		mixins: [sanityMixin],
+		
+		async created() {
+    		await this.sanityFetch(query)
+		}
+	}
+</script>
 
 <style>
     .contact {
@@ -27,6 +43,7 @@
 
     .contact__title {
         margin-bottom: 40px;
+        text-transform: uppercase;
     }
 
     @media screen and (max-width: 800px) {
@@ -47,12 +64,13 @@
 
     @media screen and (max-width: 800px) {
         .contact__info {
-            width: 250px;
+            width: 270px;
             font-size: 0.7em;
         }
     }
 
     .info__type {
+        padding-right: 10px;
         font-weight: bold;
     }
 

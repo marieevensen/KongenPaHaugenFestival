@@ -1,0 +1,6 @@
+*[_type == 'contactInfo'] {
+    title,
+    mail,
+    number,
+    quote
+}
