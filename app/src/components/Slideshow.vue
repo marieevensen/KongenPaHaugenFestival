@@ -105,7 +105,7 @@
 
 	@media screen and (max-width: 800px) {
 		.slideshow__caption {
-			font-size: 1.2em;
+			font-size: 1.1em;
 		}
 	}
 
@@ -119,4 +119,10 @@
 		right: 0;
         margin-right: 20px;
     }
+
+	@media screen and (max-width: 800px) {
+		.slideshow__button--left, .slideshow__button--right {
+			display: none;
+		}
+	}
 </style>

@@ -17,8 +17,6 @@
 		<Slideshow />
 
 		<div class="frontpage__intro">
-			<img class="intro__image" src="/images/karpeHome.jpg" alt="Picture of the artist Chirag">
-
 			<div class="intro__message">
 				<h1 class="message__title">We are back!</h1>
 
@@ -28,6 +26,8 @@
 					atmosphere at St. Hanshaugen in July.
 				</p>
 			</div>
+
+			<img class="intro__image" src="/images/karpeHome.jpg" alt="Picture of the artist Chirag">
 		</div>
 
 		<section class="frontpage__passes">
@@ -180,6 +180,12 @@
 		color: var(--foregroundLight);
 	}
 
+	@media screen and (max-width: 800px) {
+		.lineup__link {
+			font-size: 0.7em;
+		}
+	}
+
 	.lineup__link:hover {
 		padding: 10px;
 		text-decoration: none;
@@ -195,26 +201,61 @@
 		margin-top: 70px;
 	}
 
-	.intro__image {
-		width: 380px;
-		margin-top: 100px;
-		border-radius: 50%;
+	@media screen and (max-width: 800px) {
+		.frontpage__intro {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	.message__title {
-		margin: 200px 0 0 60px;
+		margin-top: 170px;
 		font-size: 3em;
 		font-weight: bold;
 	}
 
+	@media screen and (max-width: 800px) {
+		.message__title {
+			margin-top: 0px;
+			font-size: 1.5em;
+		}
+	}
+
 	.message__text {
-		width: 500px;
-		margin: 15px 0 0 140px;
+		width: 30vw;
+		margin: 15px 0 0 40px;
 		font-size: 1.3em;
+	}
+
+	@media screen and (max-width: 800px) {
+		.message__text {
+			width: 270px;
+			margin: 10px 0 0 0;
+			font-size: 1.5em;
+		}
+	}
+
+	.intro__image {
+		width: 340px;
+		margin: 100px 0 0 50px;
+		border-radius: 50%;
+	}
+
+	@media screen and (max-width: 800px) {
+		.intro__image {
+			width: 250px;
+			margin: 20px 0 0 0;
+		}
 	}
 
 	.frontpage__passes {
 		margin-top: 150px;
+	}
+
+	@media screen and (max-width: 800px) {
+		.frontpage__passes {
+			margin-top: 70px;
+		}
 	}
 
 	.passes {
@@ -222,8 +263,20 @@
 		justify-content: center;
 	}
 
+	@media screen and (max-width: 800px) {
+		.passes {
+			flex-direction: column;
+		}
+	}
+
 	.passes__title {
 		font-size: 2.5em;
+	}
+
+	@media screen and (max-width: 800px) {
+		.passes__title {
+			font-size: 2em;
+		}
 	}
 
 	.passes__pass {
@@ -234,6 +287,13 @@
 		border-left: 2px solid var(--foregroundLight);
 		padding: 40px;
 		margin: 30px;
+	}
+
+	@media screen and (max-width: 800px) {
+		.passes__pass {
+			width: 300px;
+			margin: 20px auto 0;
+		}
 	}
 
 	.pass__price {
@@ -248,14 +308,19 @@
 	}
 
 	.image--doja {
-		width: 400px;
-		margin: 100px 100px 0 0;
+		width: 25vw;
+		margin: 100px 150px 0 0;
 		box-shadow: 20px 20px var(--foregroundLight); 
 	}
 
+	@media screen and (max-width: 800px) {
+		.image--doja {
+			margin: 20px 50px 0 0;
+		}
+	}
+
 	.image--billie {
-		width: 400px;
-		/* margin: 30px 50px 0; */
+		width: 25vw;
 		box-shadow: 20px 20px var(--foregroundLight); 
 	}
 </style>
