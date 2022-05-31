@@ -117,7 +117,7 @@
 
 	@media screen and (max-width: 800px) {
         .frontpage__lineup {
-			margin: 15px;
+			margin: 10px;
 		}
     }
 
@@ -149,7 +149,7 @@
 
 	@media screen and (max-width: 800px) {
         .artist__name {
-			font-size: 1.5em;
+			font-size: 1.2em;
 			padding: 0 10px;
 		}
     }
