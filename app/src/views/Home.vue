@@ -149,7 +149,7 @@
 
 	@media screen and (max-width: 800px) {
         .artist__name {
-			font-size: 1.2em;
+			font-size: 1.4em;
 			padding: 0 10px;
 		}
     }
