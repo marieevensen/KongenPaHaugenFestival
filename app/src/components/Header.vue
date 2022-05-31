@@ -46,7 +46,6 @@
     .header__logo {
         display: flex;
         text-align: left;
-        padding-top: 7px;
         font-size: 0.8em;
         font-weight: bold;
         color: var(--foregroundDark);
@@ -56,7 +55,6 @@
         .header__logo {
             display: inline;
             text-align: center;
-            padding-top: 0;
         }
     }
 

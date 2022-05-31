@@ -6,11 +6,13 @@ export default {
         {
             title: 'Title',
             name: 'title',
+            description: 'Write the title of the page.',
             type: 'string'
         },
         {
             title: 'Description',
             name: 'description',
+            description: 'Write about the festival.',
             type: 'text'
         },
         {

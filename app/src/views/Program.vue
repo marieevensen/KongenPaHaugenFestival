@@ -37,12 +37,12 @@
 		},
 
         // methods: {
-        //     formatDate(datetimeString) {
-        //         const dato = new Date()
-        //         dato.getFullYear()
-        //     }
+        //     // formatDate(dateString) {
+        //     //     let dato = new Date()
+        //     //     date.getFullYear()
+        //     // }
         // }
-	}
+    }
 </script>
 
 <style>

@@ -32,6 +32,10 @@
     }
 </script>
 
+<!-- Kommenterer script
+	1 Endrer bakgrunnsfarge på footer når routes name er tickets eller contact
+-->
+
 <style>
     .footer {
         text-align: center;

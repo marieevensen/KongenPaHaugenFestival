@@ -8,9 +8,9 @@
 		</button>
 
 		<figure>
-			<figcaption class="slideshow__caption">{{ currentSlide.name }}</figcaption>
-			
 			<img class="slideshow__image" :src="currentSlide.file" :alt="currentSlide.alt"/>
+		
+			<figcaption class="slideshow__caption">{{ currentSlide.name }}</figcaption>
 		</figure>
 			
 		<button class="slideshow__button--right" @click="nextImage" aria-label="Go forward in slideshow">
@@ -81,6 +81,13 @@
 	};
 </script>
 
+<!-- Kommenterer script
+	1 Lager en interval, som bytter bilde etter 4 sekunder
+	2 Currentslide returnerer riktig index
+	3 Lager to methodsfunksjoner
+	3.1 En for å bla bakover, index minus 1, eller hvis index er 0 så blar den til siste bilde i array 
+	3.2 En annen for å bla fremover, index pluss 1, eller hvis index er er sist i array så blar den til index 0
+-->
 
 <style>
 	.frontpage__slideshow {
