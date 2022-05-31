@@ -136,13 +136,11 @@
 
 	.lineup__artist:hover .artist__image {
 		opacity: 1;
-		color: var(--details);
-		text-decoration-line: line-through;
 	}
 
 	.artist__name {
 		position: relative;
-		font-size: 3em;
+		font-size: 3.5em;
 		text-transform: uppercase;
 		font-weight: bold;
 		padding: 0 20px;
@@ -172,7 +170,14 @@
 		left: 40%;
 	}
 
+	@media screen and (max-width: 800px) {
+		.artists__name:hover, .artist__image {
+			display: none;
+		}
+	}
+
 	.lineup__link {
+		margin-top: 20px;
 		padding: 10px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -182,6 +187,8 @@
 
 	@media screen and (max-width: 800px) {
 		.lineup__link {
+			margin-top: 10px;
+			padding: 5px;
 			font-size: 0.7em;
 		}
 	}
@@ -212,6 +219,7 @@
 		margin-top: 170px;
 		font-size: 3em;
 		font-weight: bold;
+		text-transform: uppercase;
 	}
 
 	@media screen and (max-width: 800px) {
@@ -231,7 +239,7 @@
 		.message__text {
 			width: 270px;
 			margin: 10px 0 0 0;
-			font-size: 1.5em;
+			font-size: 1em;
 		}
 	}
 
@@ -275,7 +283,7 @@
 
 	@media screen and (max-width: 800px) {
 		.passes__title {
-			font-size: 2em;
+			font-size: 1.5em;
 		}
 	}
 
@@ -301,26 +309,39 @@
 		font-weight: bold;
 	}
 
+	@media screen and (max-width: 800px) {
+		.pass__price {
+			font-size: 1.2em;
+		}
+	}
+
 	.frontpage__images {
 		display: flex;
 		justify-content: center;
-		margin-top: 150px;
+		margin-top: 130px;
 	}
 
 	.image--doja {
-		width: 25vw;
-		margin: 100px 150px 0 0;
+		width: 30vw;
+		margin: 70px 150px 0 0;
 		box-shadow: 20px 20px var(--foregroundLight); 
 	}
 
 	@media screen and (max-width: 800px) {
 		.image--doja {
-			margin: 20px 50px 0 0;
+			width: 150px;
+			margin: 20px 30px 0 0;
 		}
 	}
 
 	.image--billie {
 		width: 25vw;
 		box-shadow: 20px 20px var(--foregroundLight); 
+	}
+
+	@media screen and (max-width: 800px) {
+		.image--billie {
+			width: 150px;
+		}
 	}
 </style>

@@ -60,7 +60,7 @@
 		mounted() {
 			window.setInterval(() => {
 				this.nextImage()
-			}, 5000)
+			}, 4000)
 		},
 
 		computed: {
@@ -84,9 +84,16 @@
 
 <style>
 	.frontpage__slideshow {
-		width: 70vw;
+		width: 80vw;
 		position: relative;
 		margin: 150px auto 0;
+	}
+
+	@media screen and (max-width: 800px) {
+		.frontpage__slideshow {
+			width: 95vw;
+			margin-top: 60px;
+		}
 	}
 
     .slideshow__button--left {
@@ -99,6 +106,7 @@
 	.slideshow__caption {
 		position: absolute;
 		bottom: 0;
+		left: 10;
 		font-size: 2em;
 		color: var(--foregroundDark);
 	}
