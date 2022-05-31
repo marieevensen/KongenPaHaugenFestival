@@ -46,21 +46,23 @@
     .header__logo {
         display: flex;
         text-align: left;
+        padding-top: 7px;
         font-size: 0.8em;
-        color: var(--foregroundDark);
         font-weight: bold;
+        color: var(--foregroundDark);
     }
 
     @media screen and (max-width: 800px) {
         .header__logo {
             display: inline;
             text-align: center;
+            padding-top: 0;
         }
     }
 
     .logo__image {
         width: 110px;
-        margin: 6px 15px 0 25px;
+        margin: 5px 15px 0 25px;
     }
 
     @media screen and (max-width: 800px) {
