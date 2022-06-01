@@ -1,4 +1,5 @@
-*[_type == 'concerts'] | order(datetime asc) {
+*[_type == 'concerts'] | order(date asc, time asc) {
     name,
-    datetime
+    date,
+    time
 }

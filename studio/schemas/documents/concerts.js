@@ -17,13 +17,16 @@ export default {
             ] 
         },
         {
-            title: 'Datetime',
-            name: 'datetime',
-            type: 'datetime',
-            options: {
-                dateFormat: 'DD-MM-YYYY',
-                timeFormat: 'HH:mm'
-            }
+            title: 'Date',
+            name: 'date',
+            description: 'Write the date when the artist will be performing.',
+            type: 'date'
+        },
+        {
+            title: 'Time',
+            name: 'time',
+            description: 'Write the time when the artist will be performing.',
+            type: 'string'
         }
     ]
 }

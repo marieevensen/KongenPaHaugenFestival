@@ -10,14 +10,16 @@
             <thead>
                 <tr>
                     <td>Artist</td>
-                    <td>Date and time</td>
+                    <td>Date</td>
+                    <td>Time</td>
                 </tr>
             </thead>
 
             <tbody>
                 <tr v-for="concert in result">
                     <td>{{ concert.name }}</td>
-                    <td>{{ concert.datetime }}</td>
+                    <td>{{ concert.date }}</td>
+                    <td>{{ concert.time }}</td>
                 </tr>
             </tbody>
         </table>
@@ -34,14 +36,7 @@
 		
 		async created() {
     		await this.sanityFetch(query)
-		},
-
-        // methods: {
-        //     // formatDate(dateString) {
-        //     //     let dato = new Date()
-        //     //     date.getFullYear()
-        //     // }
-        // }
+		}
     }
 </script>
 
