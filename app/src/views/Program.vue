@@ -26,6 +26,11 @@
     </main>
 </template>
 
+<!--
+    Jeg har valgt å ta date som date og time som string, istedenfor datetime,
+    fordi hvis en konsert er avlyst så kan man skrive cancelled istedenfor tidspunkt.
+-->
+
 <script>
     import sanityMixin from '../mixins/sanityMixin.js';
 	import query from '../groq/concerts.groq?raw';
