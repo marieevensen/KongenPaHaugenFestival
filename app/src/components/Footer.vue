@@ -18,7 +18,7 @@
             </svg>
         </figure>
 
-        <p>COPYRIGHT © 2022 MARIE EVENSEN</p>
+        <p>COPYRIGHT © 2022 NAME</p>
     </footer>
 </template>
 
