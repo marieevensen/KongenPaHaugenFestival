@@ -44,7 +44,7 @@
         text-align: left;
         margin-bottom: 40px;
         padding: 20px;
-        background-color: var(--detailsTickets);
+        background-color: var(--smallDetails);
         border: 2px solid var(--foregroundDark);
     }
 
